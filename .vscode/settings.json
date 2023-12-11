@@ -1,0 +1,7 @@
+{
+    "workbench.commandPalette.experimental.askChatLocation": "chatView",
+    "notebook.experimental.cellChat": true,
+    "accessibility.verbosity.panelChat": true,
+    "inlineChat.showToolbarIcon": true,
+    "editor.defaultFormatter": "GitHub.copilot-chat"
+}
