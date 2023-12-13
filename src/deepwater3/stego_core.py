@@ -3,7 +3,7 @@ from itertools import cycle
 
 from PIL import Image
 
-from .stego_utils import RGBAPixelArray
+from stego_utils import RGBAPixelArray
 
 logging.basicConfig(level=logging.DEBUG, filename="stego.log", filemode="w")
 logger = logging.getLogger(__name__)
@@ -77,6 +77,8 @@ if __name__ == "__main__":
     test = RGBAPixelArray.from_pillow(img)
     logger.info("Encoding message")
     encode_message(test)
+    encoded = test.to_pillow()
+    encoded.save("encoded.png")
     logger.info("Decoding message")
     decoded_message = decode_message(test)
     print("Decoded message: %s", decoded_message)

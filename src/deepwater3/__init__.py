@@ -1,1 +1,1 @@
-from .stego_utils import RGBAPixelArray
+from stego_utils import RGBAPixelArray
